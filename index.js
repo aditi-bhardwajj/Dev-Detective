@@ -110,11 +110,8 @@ if (data.twitter_username) {
 } else if (data.blog && data.blog.includes("twitter.com")) {
   twitter.innerText = "Twitter";
   twitter.href = data.blog;
-} else if (data.login === "DurinLalwani") {
-  // fallback for your account
-  twitter.innerText = "DurinLalwani";
-  twitter.href = "https://x.com/DurinLalwani";
-} else {
+}
+else {
   twitter.innerText = "Not Available";
   twitter.href = "#";
 }
